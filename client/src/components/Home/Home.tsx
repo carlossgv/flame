@@ -161,9 +161,17 @@ export const Home = (): JSX.Element => {
         <></>
       )}
 
-      <Link to="/settings" className={classes.SettingsButton}>
-        <Icon icon="mdiCog" color="var(--color-background)" />
-      </Link>
+      <div className={classes.ButtonsContainer}>
+        <Link to="/bookmarks" className={classes.SettingsButton}>
+          <Icon icon="mdiBookmark" color="var(--color-background)" />
+        </Link>
+        <Link to="/applications" className={classes.SettingsButton}>
+          <Icon icon="mdiApps" color="var(--color-background)" />
+        </Link>
+        <Link to="/settings" className={classes.SettingsButton}>
+          <Icon icon="mdiCog" color="var(--color-background)" />
+        </Link>
+      </div>
     </Container>
   );
 };

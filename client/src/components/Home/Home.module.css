@@ -1,11 +1,17 @@
+.ButtonsContainer {
+  position: fixed;
+  bottom: var(--spacing-ui);
+  left: var(--spacing-ui);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-ui);
+}
+
 .SettingsButton {
   width: 35px;
   height: 35px;
   background-color: var(--color-accent);
   border-radius: 50%;
-  position: fixed;
-  bottom: var(--spacing-ui);
-  left: var(--spacing-ui);
   display: flex;
   justify-content: center;
   align-items: center;
