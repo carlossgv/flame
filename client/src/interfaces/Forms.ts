@@ -32,6 +32,8 @@ export interface UISettingsForm {
   hideDate: boolean;
   hideSearch: boolean;
   disableAutofocus: boolean;
+  hideBookmarksButton: boolean;
+  hideCategoriesButton: boolean;
 }
 
 export interface DockerSettingsForm {

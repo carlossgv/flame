@@ -33,4 +33,6 @@ export const configTemplate: Config = {
   isKilometer: true,
   weatherData: 'cloud',
   hideDate: false,
+  hideBookmarksButton: false,
+  hideCategoriesButton: false,
 };

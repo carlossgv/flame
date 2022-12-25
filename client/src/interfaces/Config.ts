@@ -32,4 +32,6 @@ export interface Config {
   isKilometer: boolean;
   weatherData: WeatherData;
   hideDate: boolean;
+  hideBookmarksButton: boolean;
+  hideCategoriesButton: boolean;
 }

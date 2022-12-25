@@ -237,6 +237,34 @@ export const UISettings = (): JSX.Element => {
         </select>
       </InputGroup>
 
+      {/* HIDE BOOKMARKS BUTTON */}
+      <InputGroup>
+        <label htmlFor="hideBookmarksButton">Hide bookmarks shortcut</label>
+        <select
+          id="hideBookmarksButton"
+          name="hideBookmarksButton"
+          value={formData.hideBookmarksButton ? 1 : 0}
+          onChange={(e) => inputChangeHandler(e, { isBool: true })}
+        >
+          <option value={1}>True</option>
+          <option value={0}>False</option>
+        </select>
+      </InputGroup>
+
+      {/* HIDE CATEGORIES BUTTON */}
+      <InputGroup>
+        <label htmlFor="hideCategoriesButton">Hide categories shortcut</label>
+        <select
+          id="hideCategoriesButton"
+          name="hideCategoriesButton"
+          value={formData.hideCategoriesButton ? 1 : 0}
+          onChange={(e) => inputChangeHandler(e, { isBool: true })}
+        >
+          <option value={1}>True</option>
+          <option value={0}>False</option>
+        </select>
+      </InputGroup>
+
       <Button>Save changes</Button>
     </form>
   );
